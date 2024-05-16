@@ -2,10 +2,45 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ite_project/Features/Explore/Models/product_varieties.dart';
+import 'package:flutter_ite_project/Features/Explore/Models/products_model.dart';
 import 'package:flutter_ite_project/Utils/Constant/colors.dart';
 import 'package:flutter_ite_project/Utils/Constant/images.dart';
 import 'package:flutter_svg/svg.dart';
 
+List<ProductsModel> productsModelList = [
+  ProductsModel(
+      image: AppImageAssets.cokePng,
+      title: "Diet Coke",
+      subTitle: "355ml",
+      price: "\$1.99"),
+  ProductsModel(
+      image: AppImageAssets.spritePng,
+      title: "Sprite Can",
+      subTitle: "325ml",
+      price: "\$1.50"),
+  ProductsModel(
+      image: AppImageAssets.strubaryPng,
+      title: '''Apple & Grape 
+Juice''',
+      subTitle: "2L,",
+      price: "\$5.99"),
+  ProductsModel(
+      image: AppImageAssets.strubaryPng,
+      title: '''Apple & Grape 
+Juice''',
+      subTitle: "2L,",
+      price: "\$5.99"),
+  ProductsModel(
+      image: AppImageAssets.cocaColaPng,
+      title: "Coca Cola Can",
+      subTitle: "325ml",
+      price: "\$4.99"),
+  ProductsModel(
+      image: AppImageAssets.pepsiPng,
+      title: "Pepsi Can",
+      subTitle: "330ml",
+      price: "\$4.99"),
+];
 List<BottomNavigationBarItem> buttomNavigationBarItems = [
   BottomNavigationBarItem(
       activeIcon: SvgPicture.asset(

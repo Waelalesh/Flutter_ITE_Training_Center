@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ite_project/Features/Main/Pages/main_screen.dart';
-import 'package:flutter_ite_project/Utils/Constant/colors.dart';
+import 'package:flutter_ite_project/Features/OnBoarding/Widgets/my_button_widget.dart';
 import 'package:flutter_ite_project/Utils/Constant/images.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:sizer/sizer.dart';
@@ -39,21 +39,11 @@ class OnBordingScreen extends StatelessWidget {
             SizedBox(
               height: 2.h,
             ),
-            MaterialButton(
-              minWidth: 100.w - 15.w,
-              height: 7.h,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(4.w)),
-              color: AppColor.splashScreenColor,
-              onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(
+            MyButtonWidget(text: "Get Started", onPressed: () {
+                Navigator.of(context).pushReplacement(MaterialPageRoute(
                     builder: (builder) => const MainScreen()));
-              },
-              child: Text(
-                "Get Started",
-                style: Theme.of(context).textTheme.bodySmall,
-              ),
-            ),
+              },),
+           
             SizedBox(
               height: 7.h,
             )

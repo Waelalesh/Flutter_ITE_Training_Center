@@ -10,6 +10,7 @@ class ExploreProductScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        forceMaterialTransparency: true,
         centerTitle: true,
         title: Text(
           "Find Products",
@@ -21,7 +22,7 @@ class ExploreProductScreen extends StatelessWidget {
         itemCount: productVarietiesModelList.length,
         itemBuilder: (BuildContext context, int index) {
           return ProductVarietiesCard(
-            productVarietiesModel: productVarietiesModelList[index], 
+            productVarietiesModel: productVarietiesModelList[index],
           );
         },
       ),

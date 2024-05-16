@@ -1,5 +1,9 @@
 class AppImageAssets {
   static const String whiteCarrotIconSvg = "assets/icons/Carrot.svg";
+  static const String cartMinusSvg = "assets/icons/CartMinus.svg";
+  static const String logoSvg = "assets/icons/Logo.svg";
+  static const String pamentSvg = "assets/icons/Pament.svg";
+  static const String cartPlusSvg = "assets/icons/CartPlus.svg";
   static const String blackCartIconSvg = "assets/icons/Cart.svg";
   static const String blackExploreIconSvg = "assets/icons/Explore.svg";
   static const String blackFavoriteIconSvg = "assets/icons/Favorite.svg";
@@ -13,4 +17,13 @@ class AppImageAssets {
   static const String beveragesImagePng = "assets/images/Beverages.png";
   static const String bakeryImagePng = "assets/images/Bakery.png";
   static const String onBordingImagePng = "assets/images/onbording.png";
+  static const String acceptedOrderPng = "assets/images/AcceptedOrder.png";
+  static const String samsungGalaryPng = "assets/images/SamsungGalary.png";
+  static const String samsungCameraPng = "assets/images/SamsungCamera.png";
+  static const String bananasPng = "assets/images/Bananas.png";
+  static const String cocaColaPng = "assets/images/CocaCola.png";
+  static const String cokePng = "assets/images/Coke.png";
+  static const String pepsiPng = "assets/images/Pepsi.png";
+  static const String spritePng = "assets/images/Sprite.png";
+  static const String strubaryPng = "assets/images/Strubury.png";
 }
