@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ite_project/Features/Explore/Models/products_model.dart';
-import 'package:flutter_ite_project/Features/Explore/Widgets/Products_Screen_Widgets/appbar_widget.dart';
+import 'package:flutter_ite_project/Features/Explore/Widgets/Products_Screen_Widgets/plus_button_widget.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
 
@@ -31,7 +31,6 @@ class ProductCardWidget extends StatelessWidget {
           SizedBox(
             height: 1.h,
           ),
-
           Text(
             "${productsModel.subTitle}\nPrice",
             style: Theme.of(context).textTheme.headlineSmall,
@@ -45,7 +44,9 @@ class ProductCardWidget extends StatelessWidget {
                   color: Colors.black,
                 ),
               ),
-              const PlusButtonWidget()
+               PlusButtonWidget(
+                onPressed: () {},
+              )
             ],
           )
         ],
